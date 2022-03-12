@@ -3,7 +3,7 @@
   "description": "React components animated UiKit",
   "author": "seungdeok",
   "keywords": ["react", "components", "ui"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "module": "dist/index.tsx",
   "files": [ "dist", "README.md" ],
@@ -34,7 +34,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files",
+    "publish:complete": "npm publish --access=public"
   },
   "babel": {
     "presets": [
